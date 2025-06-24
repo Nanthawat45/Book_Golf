@@ -11,6 +11,9 @@ const bookingSchema = new mongoose.Schema(
     caddy: { type: [String] },
     totalPrice: { type: Number, required: true },
     isPaid: { type: Boolean, default: false },
+    golfCartQty: { type: Number, default: 0 },   // จำนวนรถกอล์ฟที่จอง
+    golfBagQty: { type: Number, default: 0 },    // จำนวนกระเป๋าที่จอง
+
   },
   { timestamps: true }
 );
